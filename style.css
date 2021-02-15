@@ -2,9 +2,11 @@ body {
     background-color: silver;
     font-size: 15px;
     font-family: 'Spartan', sans-serif;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+
+
 }
 
 h1 {
@@ -17,18 +19,20 @@ p {
 
 #page {
     width: 900px;
-    height: 410px;
+    height: 400px;
     padding: 90px;
-    display: flex;
-    flex-wrap: wrap;
-
+    align-items: center;
+    justify-content: center;
     background-color: hsl(0, 0%, 100%);
+}
 
-
+#page2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 #box-text {
-    margin-right: 70px;
+    margin: right: 70px;
 }
 
 .last-box {
@@ -41,7 +45,7 @@ p {
 }
 
 .container-star {
-    padding: 5px;
+    padding: 8px;
     margin-top: 20px;
     border: 2px solid hsl(300, 24%, 96%);
     background-color: hsl(300, 24%, 96%);
@@ -50,25 +54,10 @@ p {
 
 }
 
-.box3 {
-    margin: 0;
-    display: inherit;
-    text-align: left;
-
+#row1 {
+    align-self: start;
 }
 
-.last-box,
-.last-box1,
-.last-box2 {
-    border: 1px solid hsl(300, 43%, 22%);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    font-size: 12px;
-    background-color: hsl(300, 43%, 22%);
-    color: white;
-
-}
 
 .images {
     border-radius: 50%;
@@ -80,5 +69,45 @@ p {
 }
 
 .p1 {
+    color: hsl(333, 80%, 67%);
+}
+
+.box3 {
+
+    display: flex;
+    flex-wrap: nowrap;
+
+
+}
+
+.container-box1,
+.container-box2,
+.container-box3 {
+
+    width: 100%;
+    border: 1px solid hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    font-size: 10px;
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+.container-box1 p,
+.container-box2 p,
+.container-box3 p {
+    color: white;
+}
+
+.container-box1 .box-p2,
+.container-box2 .box-p2,
+.container-box3 .box-p2 {
     color: hsl(333, 80%, 67%);
 }
