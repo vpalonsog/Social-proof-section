@@ -9,17 +9,18 @@ body {
 
 }
 
-h1 {
-    color: hsl(300, 43%, 22%);
+
+
 }
 
 p {
     color: hsl(303, 10%, 53%)
 }
 
+
 #page {
     width: 900px;
-    height: 400px;
+    height: 450px;
     padding: 90px;
     align-items: center;
     justify-content: center;
@@ -32,7 +33,18 @@ p {
 }
 
 #box-text {
+    width: 380px;
     margin: right: 70px;
+}
+
+#box-text h1 {
+    color: hsl(300, 43%, 22%)
+}
+
+#box-text p {
+    color: hsl(303, 10%, 53%);
+    margin: 8px;
+    font-size: 10px;
 }
 
 .last-box {
@@ -40,24 +52,32 @@ p {
 }
 
 .container-star1 {
+    width: 350px;
     color: hsl(300, 43%, 22%);
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-star {
-    padding: 8px;
-    margin-top: 20px;
+    font-size: 10px;
+    width: 270px;
+    height: 22px;
+    padding: 9px;
+    margin-top: 10px;
     border: 2px solid hsl(300, 24%, 96%);
     background-color: hsl(300, 24%, 96%);
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: bold;
 
 }
 
-#row1 {
-    align-self: start;
+#row2 {
+    align-self: center;
 }
 
+#row3 {
+    align-self: flex-end;
+}
 
 .images {
     border-radius: 50%;
@@ -73,8 +93,11 @@ p {
 }
 
 .box3 {
-
+    margin-top: 50px;
+    width: 900px;
+    height: 200px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
 
 
@@ -84,10 +107,12 @@ p {
 .container-box2,
 .container-box3 {
 
-    width: 100%;
+    width: 265px;
+    height: 130px;
+
     border: 1px solid hsl(300, 43%, 22%);
     border-radius: 10px;
-    margin: 15px;
+    /* margin: 0; */
     padding: 10px;
     font-size: 10px;
     background-color: hsl(300, 43%, 22%);
@@ -104,10 +129,19 @@ p {
 .container-box2 p,
 .container-box3 p {
     color: white;
+
 }
 
 .container-box1 .box-p2,
 .container-box2 .box-p2,
 .container-box3 .box-p2 {
     color: hsl(333, 80%, 67%);
+}
+
+.container-box2 {
+    align-self: center;
+}
+
+.container-box3 {
+    align-self: flex-end;
 }
